@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Aps from './App';
 import * as serviceWorker from './serviceWorker';
+import {Provider} from 'react-redux';
+import {Route,HashRouter} from 'react-router-dom';
+const App = () => {
+    return (
+        //<Provider>
+            <HashRouter>
+                {Aps()}
+            </HashRouter>        
+       // </Provider>
+    )
+}
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
